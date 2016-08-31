@@ -1,0 +1,6 @@
+.env
+/wp
+/vendor
+/content
+!/content/mu-plugins/
+.idea

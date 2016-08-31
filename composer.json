@@ -1,0 +1,37 @@
+{
+  "name"        : "calderawp/caldera-forms-remote-test",
+  "description" : "site.",
+  "authors"     : [
+    {
+      "name"    : "Josh Pollock",
+      "email"   : "Josh@joshpress.net",
+      "homepage": "http://joshpress.net/"
+    }
+  ],
+  "type"        : "project",
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "composer",
+      "url" : "https://wpackagist.org"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/CalderaWP/Caldera-Forms/"
+    }
+  ],
+  "require"     : {
+    "johnpbloch/wordpress"                                      : "4.6",
+    "Desertsnowman/caldera-forms": "*",
+    "wpackagist-plugin/debug-bar"                           : "*",
+    "wpackagist-plugin/debug-bar-console"                   : "*",
+    "wpackagist-plugin/query-monitor"                      : "*"
+  },
+  "extra"       : {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "content/plugins/{$name}/" : ["type:wordpress-plugin"],
+      "content/site-content/themes/{$name}/"  : ["type:wordpress-theme"]
+    }
+  }
+}
